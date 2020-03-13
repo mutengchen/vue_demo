@@ -1,0 +1,72 @@
+.top {
+    position: fixed;
+    background-color: white;
+    color: #2c3e50;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-wrap: nowrap;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: left;
+}
+.top p{
+    font-style: normal;
+    color: white;
+}
+.item-avatar {
+    position: relative;
+    margin-left: 10vw;
+    width: 190px;
+    height: 100%;
+    background: url("../assets/logo_20200208.png") no-repeat center;
+    background-size: cover; /*contain是确保整个图片,容易出现留白的空间；cover是确保铺满整个区域，所以如果图片比例差距较大的话，就是图片少部分区域被截掉*/
+}
+.container {
+    position: absolute;
+    background-color: #42b983;
+    width: 100%;
+    height: 100vh;
+}
+.search_container {
+    position: relative;
+    display: flex;
+    float: left;
+    border: gray solid 1px;
+    width: 288px;
+    height: 28px;
+    margin: 9px 0 0 10px;
+    align-items: center;
+    align-content: center;
+}
+.search_input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 245px;
+    padding: 4px 33px 4px 10px;
+    height: 20px;
+    line-height: 20px;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    color: #808080;
+    outline-style: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+.search_icon {
+    background: url("../assets/search_icon.png") no-repeat center ;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px 0 auto; /*margin 上右下左，auto是表示自动适应，如果要居右显示，那就是margin-left: auto,这个的意思是空间除了自身的宽度之外，剩下的左边距就是父布局剩下的宽度*/
+}
+.list_item{
+    border: #42b983 2px;
+    background: aquamarine;
+    border-radius: 10px;
+}
